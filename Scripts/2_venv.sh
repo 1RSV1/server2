@@ -39,7 +39,7 @@ echo "=== Установка Aiogram 3.2.0 ==="
 pip3 install --upgrade pip
 pip install aiogram==3.2.0
 #pip install python-dotenv==1.0.0
-pip install -r requirements.txt
+pip install -r ./requirements.txt
 pip freeze > requirementss.txt
 
 echo
