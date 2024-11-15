@@ -23,11 +23,13 @@ source venv/bin/activate
 
 echo
 echo "=== Копирование файлов ==="
-sudo cp -R /root/Aiogram3/Scripts ./
-sudo cp -R /root/Aiogram3/Service ./
-sudo cp -R /root/Aiogram3/Nginx ./
-sudo cp -R /root/Aiogram3/html_for_bot ./
-sudo cp /root/Aiogram3/main.py ./
+sudo cp -R /root/server2/Scripts ./
+sudo cp -R /root/server2/app ./
+sudo cp -R /root/server2/Service ./
+sudo cp -R /root/server2/Nginx ./
+sudo cp -R /root/server2/html_for_bot ./
+sudo cp /root/server2/main.py ./
+sudo cp -R /root/server2/db.sqlite3 ./
 sudo chown -R $USER:$USER ./
 #sudo rm -rf /root/Aiogram3
 
