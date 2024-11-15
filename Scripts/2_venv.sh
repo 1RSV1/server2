@@ -38,7 +38,8 @@ echo "=== Установка Aiogram 3.2.0 ==="
 pip3 install --upgrade pip
 pip install aiogram==3.2.0
 #pip install python-dotenv==1.0.0
-pip freeze > requirements.txt
+pip install -r /root/server2/requirements.txt
+pip freeze > requirementss.txt
 
 echo
 read -p "=== Введите токен телеграмм бота: " bot_token
