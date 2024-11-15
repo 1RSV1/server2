@@ -83,13 +83,13 @@ fi
 echo
 echo "=== Копирование скриптов в каталог пользователя '$proj_user' ==="
 
-git clone https://github.com/Marat2010/Aiogram3
+git clone https://github.com/1RSV1/server2
 wait
 
-cp -R Aiogram3/Scripts/.config ~/
-cp -R Aiogram3/Scripts /root/
+cp -R server2/Scripts/.config ~/
+cp -R server2/Scripts /root/
 
-cp -R Aiogram3/Scripts /home/$proj_user/
+cp -R server2/Scripts /home/$proj_user/
 cp -R /home/$proj_user/Scripts/.config /home/$proj_user/
 
 chown -R $proj_user:$proj_user "/home/$proj_user/Scripts"
