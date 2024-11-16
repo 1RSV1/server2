@@ -55,6 +55,12 @@ async def on_startup(bot: Bot) -> None:
     # certificate to Telegram
     await bot.set_webhook(f"{BASE_WEBHOOK_URL}{WEBHOOK_PATH}", secret_token=WEBHOOK_SECRET)
 
+async def on_shutdown(bot: Bot) -> None:
+    """
+    Graceful shutdown. This method is recommended by aiohttp docs.
+    """
+    # Remove webhook.
+    await bot.delete_webhook()
 
 def main() -> None:
     # Dispatcher is a root router
