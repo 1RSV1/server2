@@ -30,7 +30,6 @@ sudo cp -R /root/server2/Nginx ./
 sudo cp -R /root/server2/html_for_bot ./
 sudo cp /root/server2/main.py ./
 sudo cp -R /root/server2/db.sqlite3 ./
-sudo cp -R /root/server2/requirements.txt
 sudo chown -R $USER:$USER ./
 #sudo rm -rf /root/Aiogram3
 
@@ -39,7 +38,7 @@ echo "=== Установка Aiogram 3.2.0 ==="
 pip3 install --upgrade pip
 pip install aiogram==3.2.0
 #pip install python-dotenv==1.0.0
-pip install -r /root/server2/requirements.txt
+pip install -r app/requirements.txt
 pip freeze > requirementss.txt
 
 echo
