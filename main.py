@@ -2,7 +2,7 @@ import logging
 import sys
 from os import getenv
 from aiohttp import web
-
+import app.keyboards as kb
 from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
