@@ -80,6 +80,14 @@ async def echo_handler(message: types.Message) -> None:
         # But not all the types is supported to be copied so need to handle it
         await message.answer("Nice try!")
 
+@router.message(Command("admin"))
+async def openkeyboard(message: Message):
+    await message.answer('admin', reply_markup=kb.admin)
+
+@router.message(F.text == "back to main")
+async def openkeyboard(message: Message):
+    await message.answer( 'main', reply_markup=kb.main)   
+
 
 async def on_startup(bot: Bot) -> None:
     if SELF_SSL:
