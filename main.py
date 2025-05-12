@@ -82,11 +82,11 @@ async def echo_handler(message: types.Message) -> None:
 
 @router.message(Command("admin"))
 async def openkeyboard(message: Message):
-    await message.answer('admin', reply_markup=kb.admin)
+    await message.answer('admin ans', reply_markup=kb.admin)
 
 @router.message(F.text == "back to main")
 async def openkeyboard(message: Message):
-    await message.answer( 'main', reply_markup=kb.main)   
+    await message.answer( 'main ans', reply_markup=kb.main)   
 
 
 async def on_startup(bot: Bot) -> None:
