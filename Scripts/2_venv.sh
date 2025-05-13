@@ -29,7 +29,6 @@ sudo cp -R /root/server2/Service ./
 sudo cp -R /root/server2/Nginx ./
 sudo cp -R /root/server2/html_for_bot ./
 sudo cp /root/server2/main.py ./
-sudo cp -R /root/server2/db.sqlite3 ./
 sudo chown -R $USER:$USER ./
 #sudo rm -rf /root/Aiogram3
 
