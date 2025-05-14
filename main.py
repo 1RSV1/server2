@@ -10,6 +10,7 @@ from aiogram.types import Message, FSInputFile
 from aiogram.utils.markdown import hbold
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
 import app.keyboards as kb
+from app.database.models import async_main
 
 
 
