@@ -93,6 +93,7 @@ async def openkeyboard(message: Message):
 
 async def on_startup(bot: Bot) -> None:
     if SELF_SSL:
+        await async_main()
         # In case when you have a self-signed SSL certificate, you need to send the certificate
         # itself to Telegram servers for validation purposes
         # (see https://core.telegram.org/bots/self-signed)
