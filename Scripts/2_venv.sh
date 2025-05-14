@@ -35,7 +35,7 @@ sudo chown -R $USER:$USER ./
 echo
 echo "=== Установка Aiogram 3.2.0 ==="
 pip3 install --upgrade pip
-pip install aiogram==3.2.0
+pip install aiogram==3.20.0
 #pip install python-dotenv==1.0.0
 pip freeze > requirements.txt
 
