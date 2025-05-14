@@ -9,6 +9,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, FSInputFile
 from aiogram.utils.markdown import hbold
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
+import app.keyboards as kb
 
 
 
@@ -82,11 +83,11 @@ async def echo_handler(message: types.Message) -> None:
 
 @router.message(Command("admin"))
 async def openkeyboard(message: Message):
-    await message.answer('admin ans')
+    await message.answer('admin ans', reply_markup= kb.admin)
 
 @router.message(F.text == "back to main")
 async def openkeyboard(message: Message):
-    await message.answer( 'main ans')   
+    await message.answer( 'main ans', reply_markup= kb.main)   
 
 
 async def on_startup(bot: Bot) -> None:
