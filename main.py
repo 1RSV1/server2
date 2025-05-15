@@ -9,7 +9,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, FSInputFile, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.markdown import hbold
 from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_application
-import app.ini as n
+#import app.ini as n
 
 
 
@@ -69,7 +69,7 @@ async def command_start_handler(message: Message) -> None:
 
 @router.message(Command("admin"))
 async def openkeyboard(message: Message):
-    await message.answer(f'admin ans{n.variable}')
+    await message.answer('admin ans')
 
 @router.message(F.text == "back to main")
 async def openkeyboard(message: Message):
