@@ -24,7 +24,7 @@ source venv/bin/activate
 echo
 echo "=== Копирование файлов ==="
 sudo cp -R /root/server2/Scripts ./
-sudo cp -R /root/server2/app ./
+#sudo cp -R /root/server2/app ./
 sudo cp -R /root/server2/Service ./
 sudo cp -R /root/server2/Nginx ./
 sudo cp -R /root/server2/html_for_bot ./
