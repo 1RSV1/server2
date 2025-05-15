@@ -33,9 +33,9 @@ sudo chown -R $USER:$USER ./
 #sudo rm -rf /root/Aiogram3
 
 echo
-echo "=== Установка Aiogram 3.2.0 ==="
+echo "=== Установка Aiogram 3.20.0 ==="
 pip3 install --upgrade pip
-pip install aiogram==3.2.0
+pip install aiogram==3.20.0
 #pip install SQLAlchemy==2.0.35
 #pip install python-dotenv==1.0.0
 pip freeze > requirements.txt
